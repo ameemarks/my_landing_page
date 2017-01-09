@@ -1,0 +1,19 @@
+@import 'reset.scss';
+
+/*@import 'grid';*/
+
+@import 'colors';
+@import 'typography';
+
+@import 'partials/home';
+@import 'partials/important';
+@import 'partials/contact';
+@import 'partials/about';
+@import 'partials/technologies';
+@import 'partials/footer';
+
+@import 'modules/nav';
+@import 'modules/modules';
+@import 'modules/parallax';
+
+

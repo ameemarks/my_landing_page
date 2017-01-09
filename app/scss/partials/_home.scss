@@ -1,0 +1,54 @@
+.home {
+  @extend %mainBackground;
+  background-image: url('../../app/images/backgrounds/laptop_on_table_filtr.png');
+  height: 100vh;
+  color: $white;
+}
+
+.home_flex_container {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  padding-top: 15%;
+  padding-left: 35%;
+}
+
+h1 {
+  line-height: 3rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .home_flex_container {
+    height: auto;
+    align-items: flex-start;
+    padding-top: 25%;
+    padding-left: 25%;
+
+    p {
+      padding-top: 1rem;
+    }
+  }
+
+  h1 {
+    line-height: 4rem;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .home_flex_container {
+    height: 50%;
+    padding-left: 20%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .home_flex_container {
+  }
+
+  h1 {
+    line-height: 3rem;
+  }
+}

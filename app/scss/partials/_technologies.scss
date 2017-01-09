@@ -1,0 +1,122 @@
+.technologies {
+  @extend %textPosition;
+
+  .flex_item ul li {
+    display: inline-block;
+    width: 25%;
+    svg {
+      //width: 100%;
+    }
+
+    &:nth-child(5) svg {
+      width: 250px;
+    }
+  }
+}
+
+#technologies_container {
+  margin-bottom: 6rem;
+}
+
+.technology_list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+
+
+/* --- MOBILE ---- */
+  li {
+    flex: 1 50%;
+  }
+
+  .jquery_icon, .gimp_icon {
+    flex: 2 1 100%;
+  }
+
+}
+
+/* --- VERY SMALL --- */
+@media only screen and (max-width: 399px) {
+  #technologies_container {
+    width: 100%;
+  }
+}
+
+/* --- MEDIUM ---- */
+@media only screen and (min-width: 640px) {
+  .html_icon {order: 1};
+  .css_icon {order: 2};
+  .rwd_icon {order: 3};
+  .js_icon {order: 4};
+  .jquery_icon {order: 5};
+  .gimp_icon {order: 6};
+  .sass_icon {order: 7};
+  .foundation_icon {order: 8};
+  .gulp_icon {order:9};
+  .git_icon {order:10};
+
+  .technology_list {
+    li {
+      flex: 0 1 auto;
+    }
+
+    .jquery_icon, .gimp_icon {
+      flex: 50%;
+    }
+  }
+
+}
+
+/* --- LARGE ---- */
+@media only screen and (min-width: 1024px) {
+  .html_icon {order: 1};
+  .css_icon {order: 2};
+  .rwd_icon {order: 3};
+  .js_icon {order: 4};
+  .jquery_icon {order: 5};
+  .sass_icon {order: 6};
+  .gimp_icon {order: 7};
+  .foundation_icon {order: 8};
+  .git_icon {order:9};
+  .gulp_icon {order:10};
+
+  .technology_list {
+
+    .html_icon {
+      flex: 4 1 auto;
+      svg {
+        //float: right;
+      }
+    }
+
+    .js_icon {
+      flex: 4 1 auto;
+      svg {
+        //float: left;
+      }
+    }
+
+    .jquery_icon {
+      flex: 100%;
+    }
+
+    .gimp_icon {
+      flex: 0 1 33%;
+    }
+
+    .sass_icon {
+      flex: 3 1 33%;
+      svg {
+        float: right;
+        }
+      }
+
+    .foundation_icon {
+      flex: 3 1 33%;
+      svg {
+        float: left;
+      }
+    }
+  }
+}

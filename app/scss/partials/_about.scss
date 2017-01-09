@@ -1,0 +1,25 @@
+.about {
+  @extend %textPosition;
+
+  .flex_item p {
+    text-align: justify;
+    text-indent: 30px;
+
+    &::first-letter {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .about {
+    .flex_item p {
+      text-indent: 20px;
+      line-height: 2rem !important;   //overrides placeholder %textPosition
+
+      &::first-letter {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

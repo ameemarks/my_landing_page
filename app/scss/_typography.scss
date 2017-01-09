@@ -1,0 +1,51 @@
+body {
+  font-family: Raleway, sans-serif;
+          /*'Josefin Sans', sans-serif'Raleway', sans-serif;*/
+  color: $blackGreen;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+h1 {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: 500;
+  color: $white;
+          /*'Inconsolata', monospace;*/
+  font-size: 4rem;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+  .home_flex_container p {
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+
+@media screen and (max-width: 830px) {
+  body {
+    font-size: 1.3rem;
+    line-height: 1rem;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}

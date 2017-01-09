@@ -1,0 +1,25 @@
+%mainBackground {
+    background: {
+      size:cover;
+      repeat: no-repeat;
+      attachment: fixed;
+      position: center;
+    }
+}
+
+%textPosition {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .flex_item {
+    //height: 50%;
+    width: 75%;
+    text-align: center;
+
+    p {
+      padding-bottom: 6rem;
+      line-height: 3rem;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+// dla każdej sekcji robimy grida, więc trzeba by go wrzucić w modules (extend)
+$grid-count: 7; //ilość kolumn w gridzie
+
+//szerokosc kontenera w ktorym sa kolumny
+$grid-container-width: 900px;
+
+//Wlasciwosci wspolne dla wszystkich kolumn
+%grid-column {
+  box-sizing: border-box;
+  padding: 15px;              //gutter
+  margin: 0;
+  float: left;
+  display: block;
+}
+.grid-container {
+  .row {
+    max-width: $grid-container-width;
+    box-sizing: border-box;
+    margin: auto;
+    overflow: auto;
+
+    &:before, &:after {
+      content : ””;
+      display : table;
+      clear: both;
+    }
+
+    @for $i from 1 through $grid-count {       // pętla robiąca grida (klasa .col-1 o szer. xyz, .col2: xyz*2 itd.
+      .col-#{$i} {                          // pętla nadająca mnożnik i poszczególnym kolumnom
+        @extend %grid-column;
+        min-height : 1px;
+        width : (100% / $grid-count) * $i; //szerokość containera dzielę na 12 - grid 12-kolumnowy: szerokość bazowa 1 kol.
+      }
+    }
+  }
+}

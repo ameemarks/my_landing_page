@@ -1,0 +1,26 @@
+.contact {
+  background-image: url('../../app/images/backgrounds/droga_filtr.png');
+  @extend %mainBackground;
+  @extend %textPosition;
+  color: $white;
+
+  .flex_item p {
+    span {
+      display: block;
+
+      &:nth-child(2) {
+        font-weight: bold;
+        padding: 2rem 0 4rem;
+        font-size: 2rem;
+      }
+    }
+
+    a {
+      margin: 2rem;
+
+      img {
+        width: 5rem;
+      }
+    }
+  }
+}

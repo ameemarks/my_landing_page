@@ -1,0 +1,166 @@
+/* container hamburgera */
+.hamburger_icon_shell {
+  margin: 0;
+  position: absolute;
+  width: 70px;
+  height: 100px;
+  left: calc(100% - 100px);
+  top: 20px;
+}
+
+/* Paski hamburgera */
+.top, .middle{
+  position: absolute;
+  width: 62px;
+  height: 10px;
+  background-color: $darkerGreen;
+  transition: all 350ms ease-in-out;
+  top: 20px;
+}
+
+.middle {
+  top: 40px;
+}
+
+.menu {
+  position: absolute;
+  left: calc(100% - 292px);
+  top: 10px;
+  color: $blackGreen;
+  display: block;
+  margin: 120px 30px;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  padding: 24px;
+  width: 200px;
+  text-align: right;
+
+  overflow-y: hidden;
+  max-height: 250px; /* approximate max height */
+  transition-property: all;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+.menu_hidden {
+  height: 0;
+  padding: 0 24px;
+}
+
+.menu a {
+  display: block;
+  text-decoration: none;
+  padding-bottom: 10px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid $darkerGreen;
+  list-style: none;
+  color: $grey;
+  transition: all 150ms ease;
+}
+
+/* hover poszczególnych elementów menu*/
+.menu a:hover {
+  color: $yellow;
+  padding-right: 3px;
+  border-bottom: 1px solid $yellow;
+}
+
+.menu a {
+  text-decoration: none;
+}
+
+/* przekształcanie hamburgera na X */
+.rotate {
+  transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+  top: 30px;
+  background-color: $yellow;
+  height: 2px;
+}
+
+.rotate-back {
+  transform: rotate(-225deg);
+  -webkit-transform: rotate(-225deg);
+  top: 30px;
+  background-color: $yellow;
+  height: 2px;
+}
+
+.top {
+  -webkit-animation-delay: 100ms;
+}
+
+.middle {
+  -webkit-animation-delay: 250ms;
+}
+
+.bottom {
+  -webkit-animation-delay: 400ms;
+}
+
+.menu-name {
+  font-weight: 900;
+  color: $darkerGreen;
+  font-size: 1.3rem;
+  text-decoration: none;
+  position: absolute;
+  top: 56px;
+  left: -1px;
+  transition: all 350ms;
+}
+
+.bump {
+  top: 64px;
+  color: $yellow;
+}
+
+/* STICKY MENU */
+.sticky {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(61,78,77,0.9);
+  color: $white;
+  margin: 0;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  height: 20px;
+  z-index: 4;
+  transition-duration: 1s;   //sets to default, 0s
+  transition-property: padding-top, padding-bottom, height, background-color;
+}
+
+.sticky a {
+  display: inline-block;
+  text-decoration: none;
+  padding-bottom: 2px;
+  //margin-bottom: 12px;
+  border-bottom: 1px solid $grey;
+  list-style: none;
+  color: $white;
+  font-family: Raleway, sans serif;
+  font-weight: 700;
+  margin: auto 50px;
+}
+
+/* hover poszczególnych elementów menu*/
+.sticky a:hover {
+  color: $yellow;
+  padding-right: 3px;
+}
+
+@media screen and (max-width: 1024px) {
+  .sticky a {
+    margin: auto 30px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .sticky a {
+    margin: auto 10px;
+  }
+}

@@ -1,0 +1,133 @@
+.important {
+  background-image: url('../../app/images/backgrounds/bambus_filtr.png');
+  @extend %mainBackground;
+  color: $white;
+
+  .important_container {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+
+    p {
+      padding-bottom: 6rem;
+    }
+  }
+
+  h2 {
+    //background-color: darksalmon;
+  }
+}
+
+.values_container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.value {
+  display: inline-block;
+  width: 32%;
+  text-align: center;
+
+  &:nth-child(2) {
+    //background-color: cornflowerblue;
+  }
+
+  &:first-child {
+    //background-color: #3adb76;
+  }
+
+  &:last-child {
+    //background-color: greenyellow;
+  }
+}
+
+.value_name {
+  font-weight: bolder;
+  color: $yellow;
+  margin: 30px 0;
+}
+
+.value_description {
+  font-size: 1rem;
+}
+
+.icon {
+  height: 200px;
+  //padding-top: 50px;
+}
+
+.coherence_icon svg, .communication_icon svg {
+  height: auto;
+  width: 60%;
+  fill: $white;
+  fill-opacity: 0.9;
+
+  text {
+    fill-opacity: 0.1;
+  }
+}
+
+.communication_icon svg {
+  width: 70%;
+}
+
+.simplicity_icon svg {
+  fill: $white;
+  fill-opacity: 0.9;
+  width: 50%;
+  height: auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .important .important_container {
+    width: 95%;
+
+    p {
+      //padding-bottom: 6rem;
+    }
+  }
+
+  .icon {
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .icon {
+    height: 140px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .important .important_container {
+    width: 75%;
+  }
+
+  .values_container {
+    display: inline-flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+
+  .value {
+    width: 100%;
+  }
+
+  .icon {
+    height: 200px;
+  }
+
+  .coherence_icon svg {
+    width: 40%;
+  }
+
+  .communication_icon svg {
+    width: 48%;
+  }
+
+  .simplicity_icon svg {
+    width: 34%;
+  }
+}
+
