@@ -34,3 +34,8 @@ node_modules/
 *.psd
 *.ai
 *.bmp
+
+# Idea #
+.idea/workspace.xml
+.idea/vcs.xml
+

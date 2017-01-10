@@ -469,6 +469,10 @@ footer {
   .sticky a {
     margin: auto 10px; } }
 
+@media screen and (max-width: 680px) {
+  .sticky a {
+    margin: auto 10px; } }
+
 .home, .important, .contact {
   background-size: cover;
   background-repeat: no-repeat;

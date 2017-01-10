@@ -14,7 +14,7 @@ $(document).ready(function(){
         else {
             $(".menu").removeClass("sticky");
         }
-    }
+    };
 
     stickyNav();                        //wywołuje funkcję przy załadowaniu strony
 

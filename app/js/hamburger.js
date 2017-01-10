@@ -27,11 +27,16 @@ $(document).ready(function(){
         else {
             $(".menu").removeClass("sticky");
         }
-    }
+    };
 
     stickyNav();                        //wywołuje funkcję przy załadowaniu strony
 
     $(window).scroll(function(){        //wywołuje funkcję ponownie przy scrollowaniu strony
         stickyNav();
-    })
+    });
+
+    var x = "Total Width: " + screen.width;
+    console.log(x);
+
+
 });
