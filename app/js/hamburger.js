@@ -7,7 +7,7 @@
 $(document).ready(function(){
 
     /* ----- HAMBURGER  ----- */
-    $('.hamburger_icon_shell').on('click',function(){
+    $('#hamburger_inner_container').on('click',function(){
         $('.menu').toggleClass('menu_hidden');
         $('.top').toggleClass('rotate');
         $('.middle').toggleClass('rotate-back');
@@ -35,8 +35,17 @@ $(document).ready(function(){
         stickyNav();
     });
 
+    //na brudno mobile rozszerzane
+
     var x = "Total Width: " + screen.width;
     console.log(x);
+
+    //var hambShell = document.getElementsByClassName("hamburger_icon_shell");
+    //var hamb = document.getElementsByClassName("hamburger_icon_shell");
+    //
+    //if (screen.width <= 680) {
+    //    $(hambShell).css("height", "300px");
+    //}
 
 
 });

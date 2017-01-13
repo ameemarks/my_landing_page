@@ -17,24 +17,42 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/hamburger.js"></script>
+    <script src="js/scroll_nav.js"></script>
     <!--<script src="js/sticky_menu.js"></script>-->
     <!--<script src="js/parallax.js"></script>-->
 
 </head>
 
 <body>
-    <a class="hamburger_icon_shell">                 <!-- pojemnik na hamburgera-->
-        <span class="hamb top"></span>
-        <span class="hamb middle"></span>
-        <span class="menu-name">MENU</span>
-    </a>
+    <!--<div class="hamburger_icon_shell">                 &lt;!&ndash; pojemnik na hamburgera&ndash;&gt;-->
+        <!--&lt;!&ndash;<span class="menu-name">MENU</span>&ndash;&gt;-->
+        <!--<span id="hamburger_inner_container">-->
+            <!--<span class="hamb top"></span>-->
+            <!--<span class="hamb middle"></span>-->
+            <!--<span class="hamb bottom"></span>-->
+        <!--</span>-->
+        <!--<span class="menu-name">MENU</span>-->
+    <!--</div>-->
 
-    <nav class="menu_hidden menu" role="navigation">                <!-- właściwe menu -->
-            <a href="#home">START</a>
-            <a href="#about">O MNIE</a>
-            <a href="#important">ATRYBUTY</a>
-            <a href="#technologies">TECHNOLOGIE</a>
-            <a href="#contact">KONTAKT</a>
+    <!--<nav class="menu_hidden menu" role="navigation">                &lt;!&ndash; właściwe menu &ndash;&gt;-->
+            <!--<a href="#home">START</a>-->
+            <!--<a href="#about">O MNIE</a>-->
+            <!--<a href="#important">ATRYBUTY</a>-->
+            <!--<a href="#technologies">TECHNOLOGIE</a>-->
+            <!--<a href="#contact">KONTAKT</a>-->
+    <!--</nav>-->
+
+    <nav class="navigation nav-down">
+        <a href="/" class="logo">AGrochola</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu" role="navigation">
+            <li><a href="#home">START</a></li>
+            <li><a href="#about">O MNIE</a></li>
+            <li><a href="#important">ATRYBUTY</a></li>
+            <li><a href="#technologies">TECHNOLOGIE</a></li>
+            <li><a href="#contact">KONTAKT</a></li>
+        </ul>
     </nav>
 
 

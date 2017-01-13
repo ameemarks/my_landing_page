@@ -8,8 +8,15 @@
   top: 20px;
 }
 
+#hamburger_inner_container {
+  display: block;
+  width: 80px;
+  height: 80px;
+  z-index: 4;
+}
+
 /* Paski hamburgera */
-.top, .middle{
+.hamb {
   position: absolute;
   width: 62px;
   height: 10px;
@@ -169,4 +176,70 @@
   .sticky a {
     margin: auto 10px;
   }
+
+  .menu-name:first-child {
+    display: block;
+  }
+
+  .menu-name:last-child {
+    display: none;
+  }
+
+  .menu-name {
+    font-weight: 900;
+    color: $grey;
+    font-size: 1.3rem;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+  }
+
+  .hamburger_icon_shell {
+    //background-color: $darkestGreen;
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    left: 0;
+    top: 0;
+  }
+
+  #hamburger_inner_container {
+    margin-top: auto;
+    margin-left: auto;
+    height: 60px;
+  }
+
+  .hamb {
+    position: absolute;
+    width: 40px;
+    height: 5px;
+    background-color: $grey;
+    transition: all 350ms ease-in-out;
+    left: calc(100% - 70px);
+    top: 14px;
+  }
+
+  .middle {
+    top: 26px;
+  }
+  .bottom {
+    top: 38px;
+    transition: all 350ms;
+  }
+
+  .menu {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: 60px 0 0 auto;
+    color: black;
+  }
+
 }
+
+.menu-name:first-child {
+  //display: none;
+}
+
